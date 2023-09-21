@@ -1,0 +1,226 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #C5E4E7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 50px 0 41px;
+    display: flex; 
+    justify-content: center;
+}
+
+main {
+    border-radius: 25px 25px 0px 0px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* first section start */
+.sec-white {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.procents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    margin-top: 17px;
+}
+
+.procents button, #custumInput {
+    border-radius: 5px;
+    background: #00474B;
+    width: 146.631px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border: none;
+}
+
+.procents button:hover{
+    background: #9FE8DF;
+    color: #00474B;
+}
+
+/* second section start */
+.sec-blue{
+    border-radius: 15px;
+    background: #00474B;
+    padding: 24px;
+}
+
+.sec-blue div{
+    margin-bottom: 20px;
+    height: 48px;
+}
+
+/* font styles  */
+p{
+    font-size: 13px;
+    color: #7F9D9F;;
+}
+
+h3{
+    font-size: 16px;
+    color: #5E7A7D;;
+}
+
+.sec-blue h3 {
+    color: #FFF;
+}
+
+/* added class */
+.custom {
+    background: #F3F9FA !important;
+    color: #547878!important;
+}
+
+.custom:hover {
+    border: 2px solid #26C2AE;
+    background: #F3F9FA;
+    color: #00474B;    
+}
+
+.flex-clas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container{
+    height: 48px;
+    width: 100%;
+    border-radius: 5px;
+    background: #F3F9FA;
+    padding-left: 19px;
+    padding-right: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+input{
+    border: none;
+    height: 48px;
+    border-radius: 5px;
+    background: #F3F9FA;
+    text-align: end;
+    color: #00474B;
+}
+
+.input-container:hover {
+    border: 2px solid #26C2AE;
+    /* background: #F3F9FA; */
+}
+
+.input-container:hover input {
+    border-bottom: 2px solid #26C2AE;
+    border-top: 2px solid #26C2AE;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+input:hover{
+    border-top: 2px solid #26C2AE;
+    border-bottom: 2px solid #26C2AE;
+    border-radius: 0;
+}
+
+.show {
+    border: none;
+    height: 48px;
+    width: 100px;
+    border-radius: 5px;
+    background: none;
+    color: #26C2AE;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+label{
+    color: #26C2AE;
+}
+
+.reset {
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #26C2AE;
+    color: #00474B
+}
+
+.reset:hover {
+    background-color: #9FE8DF;
+}
+
+@media(min-width:600px) {
+    body{
+        margin: auto;
+    }
+    main{
+        flex-direction: row;
+        margin: 0 auto;
+        max-width: 920px;
+        border-radius: 25px;
+    }
+
+    .sec-white{
+        flex: 1 1 100px;
+    }
+
+    .procents button{
+        width: 117px;
+    }
+
+    .sec-blue{
+        flex: 1 1 100px;
+        padding: 40px;
+
+    }
+
+    .sec-blue div{
+        height: 71px;
+    }
+
+    .reset {
+        margin-top: 40px;
+    }
+}
+
+.mesage-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.red{
+    color: rgb(235, 83, 83);
+}
+
+#custumInput{
+    display: none;
+    width: 120px;
+}
+
+#customBtn input {
+    max-width: 50px;
+}
