@@ -48,6 +48,8 @@ main {
     background: #00474B;
     width: 146.631px;
     height: 48px;
+    font-size: 24px;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,36 +121,26 @@ h3{
 
 input{
     border: none;
-    height: 48px;
+    font-size: 24px;
+    font-weight: 700;
     border-radius: 5px;
     background: #F3F9FA;
     text-align: end;
     color: #00474B;
+    max-width: 100px;
 }
 
 .input-container:hover {
     border: 2px solid #26C2AE;
-    /* background: #F3F9FA; */
 }
 
 .input-container:hover input {
-    border-bottom: 2px solid #26C2AE;
-    border-top: 2px solid #26C2AE;
-    border-left: none;
-    border-right: none;
     border-radius: 0;
-}
-
-input:hover{
-    border-top: 2px solid #26C2AE;
-    border-bottom: 2px solid #26C2AE;
-    border-radius: 0;
+    cursor: pointer;
 }
 
 .show {
     border: none;
-    height: 48px;
-    width: 100px;
     border-radius: 5px;
     background: none;
     color: #26C2AE;
@@ -218,9 +210,4 @@ label{
 
 #custumInput{
     display: none;
-    width: 120px;
-}
-
-#customBtn input {
-    max-width: 50px;
 }
